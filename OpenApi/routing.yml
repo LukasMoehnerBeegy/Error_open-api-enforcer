@@ -1,0 +1,23 @@
+openapi: "3.0.0"
+info:
+  version: Routing
+  title: Routing the path to all other OpenApi documents
+  description: Routing the path to all other OpenApi documents
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: lukas.moehner@beegy.com
+  license:
+    name: beegy
+
+
+paths:
+  /test:
+    get:
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: pong
